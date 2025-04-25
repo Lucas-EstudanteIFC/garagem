@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.urls import include, path
 
+from core.views.modelo import ModeloViewSet
 from drf_spectacular.views import (
     SpectacularAPIView,
     SpectacularRedocView,
@@ -14,6 +15,7 @@ router = DefaultRouter()
 
 router.register(r'acessorios', AcessorioViewSet, basename='acessorios')
 router.register(r'cores', CorViewSet, basename='cores')
+router.register(r'modelos', ModeloViewSet, basename='modelos')
 router.register(r'usuarios', UserViewSet, basename='usuarios')
 
 urlpatterns = [
