@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import include, path
-from core.views.acessorio import AcessorioViewSet
+
 from drf_spectacular.views import (
     SpectacularAPIView,
     SpectacularRedocView,
@@ -8,7 +8,7 @@ from drf_spectacular.views import (
 )
 from rest_framework.routers import DefaultRouter
 
-from core.views import CorViewSet, UserViewSet
+from core.views import AcessorioViewSet, CorViewSet, UserViewSet
 
 router = DefaultRouter()
 
